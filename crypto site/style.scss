@@ -9,24 +9,9 @@ body{
     background-color:#1E1E1E;
     margin:0;
 }
-.blueblur{
-    position: absolute;
-    width: 60%;
-    right:0;
-    bottom:0;
-    z-index: -1;
-}
-.greenblur{
-    position: absolute;
-    width: 80%;
-    left:0;
-    top:0;
-    z-index: -1;
-}
-
 header{
-    margin-top: 2rem;
-    margin-left: 2rem;
+    margin:0;
+    padding: 2rem 2rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -40,95 +25,211 @@ header{
         font-weight: 600;
         color: #fff;
     }
-    div{
-        &.menu{
-            margin-right: 2rem;
+    div.menu{
             display: flex;
             flex-direction: column;
             gap: 3px;
         }
-    }
-    div{
-        &.nav{
+        
+        
+    div.nav{
             background-color: #fff;
             height: 2px;
             width: 20px;
         }
+}
+section#heropage{
+    // background-color: aqua;
+    img{
+        &.blueblur{
+            position: absolute;
+            width: 60%;
+            right:0;
+            bottom:0;
+            z-index: -1;
+        }
+        &.greenblur{
+            position: absolute;
+            width: 80%;
+            left:0;
+            top:0;
+            z-index: -1;
+        }
+        &.imgHero{
+            width: 90%;
+            padding-left: 2rem;
+            margin:0;
+        }
+    }
+    h1{
+        &.heropage{
+            margin:0;
+            padding: 0 0 1rem 2rem;
+            font-size: 2rem;
+            text-align: center;
+            font-family: Outfit;
+            font-weight: 600;
+            color: #fff;   
+    }
+    }
+    div.btnHero{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 1rem;
+        }
+    button{
+        &.btnSell {
+            all:unset;
+            background-color: #23263C;
+            border-radius: 50px;
+            padding: 0.5rem 1rem 0.5rem 1rem;
+            color: #fff;
+            font-family: Outfit;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+        &.btnBuy {
+            all:unset;
+            border: 2px solid #23263C;
+            border-radius: 50px;
+            padding: 0.5rem 1rem 0.5rem 1rem;
+            color: #fff;
+            font-family: Outfit;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
     }
 }
-.imgHero{
-    width: 90%;
-    margin-left: 2rem;
+section#featuredOn{
+    // background-color: gold;
+    position: relative;
+    p{
+        margin: 0;
+        padding: 2rem 0 1rem 2rem;
+        color: #fff;
+        font-family: Outfit;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+    }
+    ul{
+    &.fOn{
+        margin: 0 2rem;
+        padding: 1rem 0 1rem 0;
+        list-style-type: none;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap:4rem;
+        justify-content: space-around;
+        background-color: #23263C;
+        border-color: #5BD2BD;
+        border:1px solid #5BD2BD;
+        box-shadow: -5px 5px  #5BD2BD ;
+    
+        font-family: Outfit;
+        font-weight: 600;
+        color: #8D949F;
+    }
+    }
 }
-
-.heropage{
-        margin: 0 2rem 1rem 2rem;
+section#buyNFT{
+    h2{
+        margin: 3rem 2rem 1rem 2rem;
         font-size: 2rem;
         text-align: center;
         font-family: Outfit;
-        font-weight: 600;
+        font-weight: 1200;
         color: #fff;   
 }
-
-.btnHero{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 1rem;
-}
-.btnSell {
-    all:unset;
-    background-color: #23263C;
-    border-radius: 50px;
-    padding: 1rem;
-    color: #fff;
-    font-family: Outfit;
-    text-transform: uppercase;
-    font-weight: 800;
-}
-.btnBuy {
-    all:unset;
-    border: 2px solid #23263C;
-    border-radius: 50px;
-    padding: 1rem;
-    color: #fff;
-    font-family: Outfit;
-    text-transform: uppercase;
-    font-weight: 800;
-}
-p{
-    margin: 1rem 0 2rem 2rem;
-    color: #fff;
-    font-family: Outfit;
-    font-size: 1.25rem;
-    text-transform: uppercase;
-}
-
-.fOn{
-    margin: 0 2rem 0 2rem;
-    padding: 1rem 0 1rem 0;
-    list-style-type: none;
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap:3rem;
-    justify-content: center;
-    background-color: #23263C;
-    border-color: #5BD2BD;
-    border:1px solid #5BD2BD;
-    box-shadow: 5px 5px  #5BD2BD ;
-
-    font-family: Outfit;
-    font-weight: 600;
-    color: #8D949F;
-}
-@media all and (max-width:768px){
-    ul{
-        display:none;
+    span{
+    &.bonus{
+        display: block;
+        // margin: 2rem 5rem 2rem 5rem;
+        color: #4C99BB;
+        font-family: Outfit;
+        font-weight: 900;
+        font-size: 1rem;
+        text-align: center;
+    }
+    &.NFT{
+        color: #56CAB1;
     }
 }
+
+    img{
+        &.monkey{
+            // position: absolute;
+            width: 70%;
+            margin-left: 3.5rem;
+            
+        }
+    }
+    // div{
+    //     &.flex{
+    //         display:flex;
+    //         flex-direction: column;
+    //         margin: 2rem 0 2rem 0;
+
+    //     }
+    // }
+
+    button{
+        &.buyNFT{
+            all:unset;
+            border: 1px solid #56CAB1;
+            border-radius: 20px;
+            padding: 1rem;
+            color: #fff;
+            font-family: Outfit;
+            text-transform: uppercase;
+            font-weight: 800;
+            
+        }
+    }
+        ul{
+            background-color: red;
+            margin: 2rem 2rem 2rem 2rem;
+            padding: 0;
+
+            // display: flex;
+            // flex-wrap: wrap;
+            // flex-direction: row;
+            // gap:2rem;
+            // justify-content: space-around;
+
+            font-family: Outfit;
+            font-size: 1rem;
+
+
+
+        li{
+            &.flex{
+                    list-style: none;
+                    color: #fff;
+                    display: flex;
+                    // background-color: red;
+
+                }
+        
+            }
+        }
+    }
+@media all and (max-width:768px){
+    header{
+        ul{
+            li.list{
+                display: none;
+            }
+        }
+}
+}
 @media all and (min-width:768px){
+    header{
+        margin:0;
+        padding: 2rem 0 2rem 4rem;
     ul{
+        margin:0;
         display:flex;
         gap:3rem;
 
@@ -136,141 +237,183 @@ p{
         font-family: outfit;
         color: #fff; 
         font-size: 1rem;
-        cursor: pointer;
+        cursor: pointer;   
     }
-    .imgHero{
+
+    img.imgHero{
         width: 70%;
         margin-left:8rem;
     }
-    .heropage{
-        margin: 0 2rem 2rem 2rem;
+    div.menu{
+    display: none;
+}
+}
+
+    section#heropage{
+
+    h1.heropage{
+        padding-left: 3rem ;
         font-size: 3rem; 
     }
 
-    .btnHero{
+    button.btnHero{
         gap: 3rem;
     }
-    .btnSell {
-        padding: 2rem;
-        font-size: 1.5rem;
+    button.btnSell {
+        font-size: 1rem;
     }
-    .btnBuy {
-        padding: 2rem;
-        font-size: 1.5rem;
+    button.btnBuy {
+        font-size: 1rem;
     }
-    p{
-        margin: 3rem 0 1rem 4rem;
-        font-size: 1.5rem;
-        font-weight: 700;
-    }
-
+}
+    section#featuredOn{
+        p{
+            padding: 3rem 0 1rem 4rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
     .fOn{
-        margin: 0 4rem 0 4rem;
+        padding-left: 4rem;
         font-size: 1.5rem;
         gap:4rem;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     span{
         font-size: 2rem;
     }
-    header{
-        margin: 3rem 4rem 0 4rem;
-    }
-    .menu{
+    div.nav{
         display: none;
-    }
+}
+}
 }
 @media all and (min-width:900px){
-.imgHero{
-    margin-left:10rem;
+
+section#heropage{
+    img.imgHero{
+        padding-left:4rem;
+    }
+
+    button.btnSell {
+        padding: 1rem 1.5rem;
+        font-size: 1.25rem;
+    }
+    button.btnBuy {
+        padding: 1rem 1.5rem;
+        font-size: 1.25rem;
+    }
+}
+section#featuredOn{
+    ul.fOn{
+  padding: 2rem 2rem;
+    }
 }
 }
 @media all and (min-width:1100px){
-    .greenblur{
-        width: 50%;
-    }
-    .blueblur{
-        width: 40%;
-    }
-    ul{
-        display:flex;
-        gap:3rem;
-        font-size: 1.5rem;
-    }
     header{
         position: relative;
-        margin: 5rem 10rem 0 10rem;
+        padding: 3rem 4rem;
+        ul{
+            display:flex;
+            gap:4rem;
+            font-size: 1.5rem;
+            // justify-content: right;
+        }  
+        span{
+            font-size: 1.5rem;
+
+        }
     }
-    .imgHero{
-        position: absolute;
-        right: 0;
-        top:20vh;
-     width: 50%;
-    //  float: right;
-    //  margin-top:-2rem;
+    section#heropage{
+        img.greenblur{
+            width: 50%;
+        }
+        img.blueblur{
+            width: 40%;
+        }
 
+        div.heroFlex{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-around;
+        }
+        img.imgHero{
+        width: 40%;
+
+        }
+        h1.heropage{
+            text-align: left;
+            font-size: 3rem; 
+            width: 40vw;
+        }
+        div.btnHero{
+            justify-content: left;
+        }
+        button.btnSell {
+            padding: 1.25rem 2rem;
+            font-size: 2rem;
+        }
+        button.btnBuy {
+            padding: 1.25rem 2rem;
+            font-size: 2rem;
+        }
+        .btnHero{
+            gap: 3rem;
+            justify-content: left;
+            margin-left: 10rem;
+            margin-top:3rem;
+        }
+        .btnBuy{
+            font-size:10rem;
+            padding: 1rem 3rem 1rem 3rem;
+        }
+        .btnSell{
+            font-size:1.5rem;
+            padding-left:3rem;
+            padding-right:3rem;
+        }
+        p{
+            margin: 7rem 0 2rem 10rem;
+            font-size: 2rem;
+        }
+        
+        .fOn{
+            margin: 0 10rem 0 10rem;
+            font-size: 1.5rem;
+            gap:4rem;
+            justify-content: space-around;
+        }
+        span{
+            font-size: 2rem;
+        }
     }
-    .heropage{
-        display: block;
-        width: 40vw;
-        margin: 13rem 2rem 2rem 10rem;
-        text-align: left;
-        font-size: 3rem; 
-}
-
-.btnHero{
-    gap: 3rem;
-    justify-content: left;
-    margin-left: 10rem;
-    margin-top:3rem;
-}
-.btnBuy{
-    font-size:1.5rem;
-    padding-left:3rem;
-    padding-right:3rem;
-}
-.btnSell{
-    font-size:1.5rem;
-    padding-left:3rem;
-    padding-right:3rem;
-}
-p{
-    margin: 7rem 0 2rem 10rem;
-    font-size: 2rem;
-}
-
-.fOn{
-    margin: 0 10rem 0 10rem;
-    font-size: 1.5rem;
-    gap:4rem;
-    justify-content: space-around;
-}
-span{
-    font-size: 2rem;
-}
-.menu{
-    display: none;
-}
-}
-@media all and (min-width:1300px){
-.imgHero{
-    position: absolute;
-    right: 0;
-    top:15vh;
- width: 50%;
-}
 }
 @media all and (min-width:1600px){
-.imgHero{
- width: 45%;
- top:20vh;
+    header{
+        position: relative;
+        padding: 4rem 5rem;
+        ul{
+            display:flex;
+            gap:7rem;
+            font-size: 1.5rem;
+            padding-right: 5rem;
+            // justify-content: right;
+        }
+    }
+    section#heropage{
+    .imgHero{
+    width: 45%;
+    padding: 0;
+    }
+    h1.heropage{
+        font-size: 4rem; 
+        // padding-left: 5rem;
+    }
+    section#featuredOn{
+
+    p{
+        font-size: 2rem;
+    }
 }
-p{
-    margin: 8rem 0 2rem 10rem;
-    font-size: 2rem;
-}
-.heropage{
-    margin: 13rem 2rem 2rem 10rem;
-    font-size: 5rem; 
 }
 }
