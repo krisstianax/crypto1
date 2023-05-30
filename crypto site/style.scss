@@ -27,42 +27,40 @@ header{
     }
     div.menu{
         margin:0;
-            display: flex;
-            flex-direction: column;
-            gap: 3px;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
         }
         
         
     div.nav{
-            background-color: #fff;
-            height: 2px;
-            width: 20px;
+        background-color: #fff;
+        height: 2px;
+        width: 20px;
         }
 }
 #heropage{
     // background-color: aqua;
     .blueblur{
-            position: absolute;
-            width: 60%;
-            right:0;
-            bottom:0;
-            z-index: -1;
+        position: absolute;
+        width: 60%;
+        right:0;
+        bottom:0;
+        z-index: -1;
         }
     .greenblur{
-            position: absolute;
-            width: 80%;
-            left:0;
-            top:0;
-            z-index: -1;
+        position: absolute;
+        width: 80%;
+        left:0;
+        top:0;
+        z-index: -1;
         }
     .imgHero{
-            width: 90%;
-            padding-left: 2rem;
-            margin:0;
+        width: 90%;
+        padding-left: 2rem;
+        margin:0;
         }
-    }
-    
-    .heropage{
+        .heropage{
             margin:0;
             padding: 0 1rem;
             font-size: 2rem;
@@ -71,6 +69,26 @@ header{
             font-weight: 600;
             color: #fff;   
     }
+    .btnSell {
+        all:unset;
+        background-color: #23263C;
+        border-radius: 50px;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        color: #fff;
+        font-family: Outfit;
+        text-transform: uppercase;
+        font-weight: 800;
+        }
+    .btnBuy {
+        all:unset;
+        border: 2px solid #23263C;
+        border-radius: 50px;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        color: #fff;
+        font-family: Outfit;
+        text-transform: uppercase;
+        font-weight: 800;
+        }
     .btnflex{
         display: flex;
         flex-direction: column;
@@ -78,27 +96,8 @@ header{
         align-items: center;
         gap:0.5rem;
     }
+    }
     
-    .btnSell {
-            all:unset;
-            background-color: #23263C;
-            border-radius: 50px;
-            padding: 0.5rem 1rem 0.5rem 1rem;
-            color: #fff;
-            font-family: Outfit;
-            text-transform: uppercase;
-            font-weight: 800;
-        }
-    .btnBuy {
-            all:unset;
-            border: 2px solid #23263C;
-            border-radius: 50px;
-            padding: 0.5rem 1rem 0.5rem 1rem;
-            color: #fff;
-            font-family: Outfit;
-            text-transform: uppercase;
-            font-weight: 800;
-        }
 #featuredOn{
     // background-color: gold;
     position: relative;
@@ -153,7 +152,7 @@ header{
     }
 
 #buyNFT{
-    padding: 0 2rem;
+    padding: 1rem 2rem 0 2rem;
     .wrapper{
         display: flex;
         flex-direction: column;
@@ -195,7 +194,7 @@ header{
         
     }
 
-.buy{
+    .buy{
         all:unset;
         border: 1px solid #56CAB1;
         border-radius: 20px;
@@ -227,7 +226,6 @@ header{
                 list-style: none;
                 color: #fff;
                 display: flex;
-                background-color: red;
 
              }
 }
@@ -261,7 +259,6 @@ header{
     font-weight: 800;
     }
     .blueMonkey{
-        position: relative;
         top: 0;
         left: 0;
         transform: rotate(-25deg);
@@ -285,7 +282,81 @@ header{
         width: 100%;
     }
 }
+#testmonial{
+    padding: 2rem 5rem 0 5rem;
+    .littleTittle{
+        margin: 0;
+        color: #4C99BB;
+        font-family: Outfit;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .ourClients{
+        margin:0;
+        font-size: 2rem;
+        text-align: center;
+        font-family: Outfit;
+        font-weight: 1200;
+        color: #fff; 
+    }
+    .clients{
+        margin:0;
+        font-size: 1.5rem;
+        text-align: center;
+        font-family: Outfit;
+        font-weight: 1200;
+        color: #fff; 
 
+ 
+    }
+    .clientsOpinion{
+        margin:0;
+        font-size: 1rem;
+        text-align: center;
+        font-family: Outfit;
+        font-weight: 1200;
+        color: #fff; 
+
+    }
+    .clientsPhotos{
+        border-radius: 50%;
+        z-index: 1;
+        width: 30%;
+        margin-bottom: -6%;
+    }
+    .text{
+        padding: 2rem 1rem;
+        background-color: #24293F;
+        border-radius: 10px;
+        line-height: 1.5;
+    }
+    .opinions{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        gap:0.5rem;
+    }
+    .opinionsFlex{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap:1rem;
+
+    }
+
+}
+
+@media all and (min-width:465px){
+    #carryOut{
+    .purpleMonkey{
+        width: 40%;
+        right: 4rem;
+    }
+}
+}
 @media all and (max-width:768px){
     header{
         ul{
@@ -340,7 +411,7 @@ header{
         }
     .names{
         padding-left: 4rem;
-        font-size: 1.5rem;
+        font-size: 1.5rem; 
         gap:4rem;
         justify-content: space-between;
     }
@@ -350,6 +421,11 @@ header{
     .nav{
         display: none;
 }
+.backgrounding {
+    width: 90%;
+    height:35%;
+}	
+
 }
     #buyNFT{
 .firstPeople{
@@ -378,16 +454,34 @@ header{
         font-size: 1.5rem;
 
     }
- }
+}
+#testmonial{
+    .littleTittle{
+        font-size: 1.5rem;
+    }
+    .ourClients{
+        font-size: 3rem; 
+    }
+    .clients{
+        font-size: 2.5rem; 
+    }
+    .clientsOpinion{
+        font-size: 1.25rem;
+    }
+    .clientsPhotos{
+        width: 15%;
+        margin-bottom: -4%;
+    }
+}
 }
 @media all and (min-width:900px){
 
 #heropage{
-    img.imgHero{
+    .imgHero{
         padding-left:4rem;
     }
 
-    button.btnSell {
+    .btnSell {
         padding: 1rem 1.5rem;
         font-size: 1.25rem;
     }
@@ -399,6 +493,10 @@ header{
 #featuredOn{
     .names{
   padding: 2rem 2rem;
+    }
+    .backgrounding {
+        width: 90%;
+        height:53%;
     }
 }
 }
@@ -428,7 +526,7 @@ header{
         .heroFlex{
             display: flex;
             flex-direction: row-reverse;
-            align-items: center;
+            // align-items: center;
             justify-content: space-around;
         }
         .imgHero{
@@ -443,6 +541,9 @@ header{
         .btnflex{
             align-items: flex-start;
             color: green;
+        }
+        .heropage{
+            padding: 0;
         }
 
         // .btnHero{
@@ -492,6 +593,7 @@ header{
             padding-top: 3rem;
             flex-direction: row-reverse;
             align-items: flex-start;
+            gap:3rem;
         }
         .flexInfo{
             display: flex;
@@ -511,7 +613,7 @@ header{
         
         }
         .monkey{
-            width: 50%;
+            width: 40%;
             // order: 1;
             
         }
@@ -531,13 +633,21 @@ header{
     
             }
             
-            .itemsFlex{
-                        list-style: none;
-                        color: #fff;
-                        display: flex;
-                        // background-color: red;
-        
-                     }
+        .itemsFlex{
+            list-style: none;
+            color: #fff;
+            display: flex;
+            // background-color: red;
+        }
+}
+#testmonial{
+    .clientsPhotos{
+        width: 40%;
+        margin-bottom: -10%;
+    }
+    .opinionsFlex{
+        flex-direction: row;
+    }
 }
 }
 @media all and (min-width:1600px){
@@ -561,19 +671,22 @@ header{
         font-size: 4rem; 
         // padding-left: 5rem;
     }
+}
     #featuredOn{
 
     p{
         font-size: 2rem;
     }
+    .backgrounding {
+        width: 95%;
+        height:53%;
 }
 }
 #buyNFT{
 
     .wrapper{
         flex-direction: row-reverse;
-        align-items: flex-start;
-        gap:5rem;
+        gap:7rem;
     }
     .flexInfo{
         display: flex;
@@ -593,7 +706,7 @@ header{
     
     }
     .monkey{
-        width: 50%;
+        width: 45%;
         
     }
     
@@ -603,24 +716,60 @@ header{
         .items{
             margin: 0 2rem 0 0;
             width: 55vw;
-
-
         }
+}
+#testmonial{
+    .littleTittle{
+        font-size: 2rem;
+    }
+    .ourClients{
+        font-size: 4rem;
+    }
+    .clientsPhotos{
+        width: 30%;
+        margin-bottom: -10%;
+    }
+    .opinionsFlex{
+        flex-direction: row;
+        flex-wrap: nowrap;
         
-        .itemsFlex{
-                    list-style: none;
-                    color: #fff;
-                    display: flex;
-                    // background-color: red;
-    
-                 }
+    }
 }
 }
 @media all and (min-width:1750px){
+    #heropage{
+        .btnSell {
+            font-size: 1.5rem;
+        }
+        .btnBuy {
+            font-size: 1.5rem;
+        }
+        .btnflex{
+            gap:2rem;
+        }
+        .heropage{
+            font-size: 5.5rem;
+        }
+    }
 #buyNFT{
-
+    .firstPeople{
+        font-size: 5rem;
+    }
+    .bonus{
+        font-size: 2.5rem;
+    }
+    .price{
+        font-size: 3rem;
+    }
     .wrapper{
         align-items: center;
+    }
+    .monkey{
+        width:40%;
+    }
+    .flexInfo{
+        gap:2rem;
+        // margin-bottom: 7rem;
     }
 }
 }

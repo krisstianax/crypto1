@@ -57,8 +57,7 @@ header div.nav {
   padding-left: 2rem;
   margin: 0;
 }
-
-.heropage {
+#heropage .heropage {
   margin: 0;
   padding: 0 1rem;
   font-size: 2rem;
@@ -67,16 +66,7 @@ header div.nav {
   font-weight: 600;
   color: #fff;
 }
-
-.btnflex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.btnSell {
+#heropage .btnSell {
   all: unset;
   background-color: #23263C;
   border-radius: 50px;
@@ -86,8 +76,7 @@ header div.nav {
   text-transform: uppercase;
   font-weight: 800;
 }
-
-.btnBuy {
+#heropage .btnBuy {
   all: unset;
   border: 2px solid #23263C;
   border-radius: 50px;
@@ -96,6 +85,13 @@ header div.nav {
   font-family: Outfit;
   text-transform: uppercase;
   font-weight: 800;
+}
+#heropage .btnflex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 #featuredOn {
@@ -140,7 +136,7 @@ header div.nav {
 }
 
 #buyNFT {
-  padding: 0 2rem;
+  padding: 1rem 2rem 0 2rem;
 }
 #buyNFT .wrapper {
   display: flex;
@@ -207,7 +203,6 @@ header div.nav {
   list-style: none;
   color: #fff;
   display: flex;
-  background-color: red;
 }
 
 #carryOut {
@@ -240,7 +235,6 @@ header div.nav {
   font-weight: 800;
 }
 #carryOut .blueMonkey {
-  position: relative;
   top: 0;
   left: 0;
   transform: rotate(-25deg);
@@ -260,6 +254,74 @@ header div.nav {
   width: 100%;
 }
 
+#testmonial {
+  padding: 2rem 5rem 0 5rem;
+}
+#testmonial .littleTittle {
+  margin: 0;
+  color: #4C99BB;
+  font-family: Outfit;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+#testmonial .ourClients {
+  margin: 0;
+  font-size: 2rem;
+  text-align: center;
+  font-family: Outfit;
+  font-weight: 1200;
+  color: #fff;
+}
+#testmonial .clients {
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: Outfit;
+  font-weight: 1200;
+  color: #fff;
+}
+#testmonial .clientsOpinion {
+  margin: 0;
+  font-size: 1rem;
+  text-align: center;
+  font-family: Outfit;
+  font-weight: 1200;
+  color: #fff;
+}
+#testmonial .clientsPhotos {
+  border-radius: 50%;
+  z-index: 1;
+  width: 30%;
+  margin-bottom: -6%;
+}
+#testmonial .text {
+  padding: 2rem 1rem;
+  background-color: #24293F;
+  border-radius: 10px;
+  line-height: 1.5;
+}
+#testmonial .opinions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  gap: 0.5rem;
+}
+#testmonial .opinionsFlex {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media all and (min-width: 465px) {
+  #carryOut .purpleMonkey {
+    width: 40%;
+    right: 4rem;
+  }
+}
 @media all and (max-width: 768px) {
   header ul {
     display: none;
@@ -314,6 +376,10 @@ header div.nav {
   #featuredOn .nav {
     display: none;
   }
+  #featuredOn .backgrounding {
+    width: 90%;
+    height: 35%;
+  }
   #buyNFT .firstPeople {
     font-size: 3rem;
   }
@@ -335,12 +401,28 @@ header div.nav {
   #buyNFT .items {
     font-size: 1.5rem;
   }
+  #testmonial .littleTittle {
+    font-size: 1.5rem;
+  }
+  #testmonial .ourClients {
+    font-size: 3rem;
+  }
+  #testmonial .clients {
+    font-size: 2.5rem;
+  }
+  #testmonial .clientsOpinion {
+    font-size: 1.25rem;
+  }
+  #testmonial .clientsPhotos {
+    width: 15%;
+    margin-bottom: -4%;
+  }
 }
 @media all and (min-width: 900px) {
-  #heropage img.imgHero {
+  #heropage .imgHero {
     padding-left: 4rem;
   }
-  #heropage button.btnSell {
+  #heropage .btnSell {
     padding: 1rem 1.5rem;
     font-size: 1.25rem;
   }
@@ -350,6 +432,10 @@ header div.nav {
   }
   #featuredOn .names {
     padding: 2rem 2rem;
+  }
+  #featuredOn .backgrounding {
+    width: 90%;
+    height: 53%;
   }
 }
 @media all and (min-width: 1100px) {
@@ -374,7 +460,6 @@ header div.nav {
   #heropage .heroFlex {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
     justify-content: space-around;
   }
   #heropage .imgHero {
@@ -388,6 +473,9 @@ header div.nav {
   #heropage .btnflex {
     align-items: flex-start;
     color: green;
+  }
+  #heropage .heropage {
+    padding: 0;
   }
   #heropage .btnHero {
     gap: 3rem;
@@ -413,6 +501,7 @@ header div.nav {
     padding-top: 3rem;
     flex-direction: row-reverse;
     align-items: flex-start;
+    gap: 3rem;
   }
   #buyNFT .flexInfo {
     display: flex;
@@ -430,7 +519,7 @@ header div.nav {
     font-size: 2rem;
   }
   #buyNFT .monkey {
-    width: 50%;
+    width: 40%;
   }
   #buyNFT .buy {
     font-size: 1.5rem;
@@ -448,6 +537,13 @@ header div.nav {
     list-style: none;
     color: #fff;
     display: flex;
+  }
+  #testmonial .clientsPhotos {
+    width: 40%;
+    margin-bottom: -10%;
+  }
+  #testmonial .opinionsFlex {
+    flex-direction: row;
   }
 }
 @media all and (min-width: 1600px) {
@@ -468,13 +564,16 @@ header div.nav {
   #heropage .heropage {
     font-size: 4rem;
   }
-  #heropage #featuredOn p {
+  #featuredOn p {
     font-size: 2rem;
+  }
+  #featuredOn .backgrounding {
+    width: 95%;
+    height: 53%;
   }
   #buyNFT .wrapper {
     flex-direction: row-reverse;
-    align-items: flex-start;
-    gap: 5rem;
+    gap: 7rem;
   }
   #buyNFT .flexInfo {
     display: flex;
@@ -493,7 +592,7 @@ header div.nav {
     font-size: 2.5rem;
   }
   #buyNFT .monkey {
-    width: 50%;
+    width: 45%;
   }
   #buyNFT .buy {
     font-size: 2rem;
@@ -502,14 +601,50 @@ header div.nav {
     margin: 0 2rem 0 0;
     width: 55vw;
   }
-  #buyNFT .itemsFlex {
-    list-style: none;
-    color: #fff;
-    display: flex;
+  #testmonial .littleTittle {
+    font-size: 2rem;
+  }
+  #testmonial .ourClients {
+    font-size: 4rem;
+  }
+  #testmonial .clientsPhotos {
+    width: 30%;
+    margin-bottom: -10%;
+  }
+  #testmonial .opinionsFlex {
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
 }
 @media all and (min-width: 1750px) {
+  #heropage .btnSell {
+    font-size: 1.5rem;
+  }
+  #heropage .btnBuy {
+    font-size: 1.5rem;
+  }
+  #heropage .btnflex {
+    gap: 2rem;
+  }
+  #heropage .heropage {
+    font-size: 5.5rem;
+  }
+  #buyNFT .firstPeople {
+    font-size: 5rem;
+  }
+  #buyNFT .bonus {
+    font-size: 2.5rem;
+  }
+  #buyNFT .price {
+    font-size: 3rem;
+  }
   #buyNFT .wrapper {
     align-items: center;
+  }
+  #buyNFT .monkey {
+    width: 40%;
+  }
+  #buyNFT .flexInfo {
+    gap: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */
