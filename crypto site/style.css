@@ -316,6 +316,45 @@ header div.nav {
   gap: 1rem;
 }
 
+#becomePart {
+  padding: 2rem 2rem 0 2rem;
+  position: relative;
+}
+#becomePart .gradient {
+  background-image: linear-gradient(#252A46, #39766D);
+  z-index: -10;
+  height: 80vh;
+}
+#becomePart .project {
+  margin: 0;
+  position: absolute;
+  width: 60vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  text-align: center;
+  font-family: Outfit;
+  font-weight: 1200;
+  color: #fff;
+}
+#becomePart .btnProject {
+  all: unset;
+  margin: 0;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000;
+  border: 1px solid #000;
+  border-radius: 50px;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  color: #fff;
+  font-family: Outfit;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
 @media all and (min-width: 465px) {
   #carryOut .purpleMonkey {
     width: 40%;
@@ -416,6 +455,17 @@ header div.nav {
   #testmonial .clientsPhotos {
     width: 15%;
     margin-bottom: -4%;
+  }
+  #becomePart .project {
+    font-size: 3rem;
+  }
+  #becomePart .btnProject {
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    color: #fff;
+    font-family: Outfit;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 800;
   }
 }
 @media all and (min-width: 900px) {
@@ -614,6 +664,17 @@ header div.nav {
   #testmonial .opinionsFlex {
     flex-direction: row;
     flex-wrap: nowrap;
+  }
+  #becomePart .project {
+    font-size: 4rem;
+  }
+  #becomePart .btnProject {
+    padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+    color: #fff;
+    font-family: Outfit;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 800;
   }
 }
 @media all and (min-width: 1750px) {
