@@ -141,11 +141,11 @@ header .menu .nav {
   color: #fff;
   text-align: center;
 }
-#buyNFT .wrapper * {
+#buyNFT .wrapper > * {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-#buyNFT .wrapper *:last-child {
+#buyNFT .wrapper > *:last-child {
   margin-bottom: 0;
 }
 #buyNFT .wrapper .tittle {
