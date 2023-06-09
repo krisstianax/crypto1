@@ -2,12 +2,16 @@
     font-family: Outfit;
     src: url(fonts/static/Outfit-ExtraLight.ttf);
 }
+* {
+    box-sizing: border-box;
+}
 html{
     width: 100vw;
 }
 body{
     background-color:#1E1E1E;
     margin:0;
+    font-family: Outfit;
 }
 header{
     margin:0;
@@ -19,35 +23,26 @@ header{
     // background-color: red;
 
     .logo{
-        font-size: 1rem;
-        font-family: Outfit;
+        font-size: 1rem;        
         text-transform: uppercase;
         font-weight: 600;
         color: #fff;
     }
-    div.menu{
+    .menu{
         margin:0;
         display: flex;
         flex-direction: column;
-        gap: 3px;
-        }
-        
-        
-    div.nav{
-        background-color: #fff;
-        height: 2px;
-        width: 20px;
+        gap: 3px; 
+
+        .nav{
+            background-color: #fff;
+            height: 2px;
+            width: 20px;
+            }
         }
 }
 #heropage{
     // background-color: aqua;
-    .blueblur{
-        position: absolute;
-        width: 60%;
-        right:0;
-        bottom:0;
-        z-index: -1;
-        }
     .greenblur{
         position: absolute;
         width: 80%;
@@ -55,194 +50,204 @@ header{
         top:0;
         z-index: -1;
         }
-    .imgHero{
-        width: 90%;
-        padding-left: 2rem;
-        margin:0;
-        }
-        .heropage{
+    .heroFlex{
+        .imgHero{
+            width: 90%;
+            padding-left: 2rem;
             margin:0;
-            padding: 0 1rem;
-            font-size: 2rem;
-            text-align: center;
-            font-family: Outfit;
-            font-weight: 600;
-            color: #fff;   
+            }
+        .btnflex{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap:0.5rem;
+            }
+            .tittle{
+                    margin:0;
+                    padding: 0 1rem;
+                    font-size: 2rem;
+                    text-align: center;
+                    font-weight: 600;
+                    color: #fff;   
+            }
+            .btnSell,
+            .btnBuy {
+                all: unset;
+                background-color: #23263c;
+                border: 2px solid transparent;
+                border-radius: 50px;
+                padding: 0.5rem 1rem 0.5rem 1rem;
+                color: #fff;
+                font-family: Outfit;
+                text-transform: uppercase;
+                font-weight: 800;
+            }
+        
+            .btnBuy {
+                border-color: #23263c;
+                background-color: transparent;
+            }
+            }
+    .blueblur{
+         position: absolute;
+        width: 60%;
+        right:0;
+        bottom:0;
+        z-index: -1;
     }
-    .btnSell {
-        all:unset;
-        background-color: #23263C;
-        border-radius: 50px;
-        padding: 0.5rem 1rem 0.5rem 1rem;
-        color: #fff;
-        font-family: Outfit;
-        text-transform: uppercase;
-        font-weight: 800;
-        }
-    .btnBuy {
-        all:unset;
-        border: 2px solid #23263C;
-        border-radius: 50px;
-        padding: 0.5rem 1rem 0.5rem 1rem;
-        color: #fff;
-        font-family: Outfit;
-        text-transform: uppercase;
-        font-weight: 800;
-        }
-    .btnflex{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap:0.5rem;
-    }
-    }
+}
     
 #featuredOn{
     // background-color: gold;
     position: relative;
-    p{
+    h2{
         margin: 0;
         padding: 2rem 0 1rem 2rem;
         color: #fff;
-        font-family: Outfit;
         font-size: 1.25rem;
         text-transform: uppercase;
-    }
-    .names, .backgrounding{
-        margin: 1rem 2rem;
-        padding: 1rem 0 1rem 0;
-        list-style-type: none;
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap:2rem;
-        justify-content: space-around;
-        background-color: #23263C;
-        border-color: #5BD2BD;
-        border:1px solid #5BD2BD;
-    
-        font-family: Outfit;
-        font-weight: 600;
-        color: #8D949F;
-
     }
     .container {
-        width: 100%;
-        height: 100%;
-        position: relative;
-      }
-    //   .names, .backgrounding {
-    //     // width: 100%;
-    //     // height: 100%;
-    //     // // position: absolute;
-    //     // top: 0;
-    //     // left: 0;
+        padding: 1rem 2rem;
 
-    //   }
-      .backgrounding {
-        position: absolute;
-        margin-left:1.75rem;
-        width: 79%;
-        height:57%;
-        top:0px;
-        z-index: -1;
+        .names {
+            position: relative;
+            padding: 1rem;
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: space-around;
+            background-color: #23263c;
+            border: 1px solid #5bd2bd;
+            font-family: Outfit;
+            font-weight: 600;
+            color: #8d949f;
 
-      }	
+            &::after {
+                box-sizing: border-box;
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0.5rem;
+                left: -0.5rem;
+                border: 1px solid #5bd2bd;
+                z-index: -1;
+            }
+        }
     }
-
+}
 #buyNFT{
+    position: relative;
     padding: 1rem 2rem 0 2rem;
     .wrapper{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap:1rem;
-    }
-    .flexInfo{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap:1rem;
-    }
-    .firstPeople{
-        margin:0;
-        font-size: 2rem;
-        text-align: center;
-        font-family: Outfit;
-        font-weight: 1200;
-        color: #fff;   
-}
-    .bonus{
-        display: block;
-        // margin: 2rem 5rem 2rem 5rem;
-        color: #4C99BB;
-        font-family: Outfit;
-        font-weight: 900;
-        font-size: 1rem;
-        text-align: center;
-    }
-    .price{
-        font-size: 1.25rem;
-
-    }
-    .NFT{
-        color: #56CAB1;
-    }
-    .monkey{
-        width: 100%;
-        
-    }
-
-    .buy{
-        all:unset;
-        border: 1px solid #56CAB1;
-        border-radius: 20px;
-        padding: 1rem;
         color: #fff;
-        font-family: Outfit;
-        text-transform: uppercase;
-        font-weight: 800;
+        text-align: center;
+        * {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        *:last-child {
+            margin-bottom: 0;
+        }
+        .tittle{
+            font-size: 2rem;
+    }
+            .highlight{
+                color: #56CAB1;
+                font-size: 2rem;
+            }
+        .bonus{
+            color: #4C99BB;
+            font-weight: 900;
+
+        }
+        .price{
+            font-size: 1.25rem;
+
+            // &::after {
+            //     box-sizing: border-box;
+            //     content: '';
+            //     position: absolute;
+            //     width: 30px;
+            //     height: 3px;
+            //     top: 12.5rem;
+            //     left: 15.5rem;
+            //     border: 2px solid #5bd2bd;
+            //     z-index: 10;
+            // }
+        }
         
-    }
+        // .arrow{
+        //     position: absolute;            
+        //     height: 5px;
 
-    .items{
-        margin-top: 2rem;
-        background-color: #3A5B6A;
-        padding: 0.5rem 0.5rem;
-        display: grid;
-        grid-template-columns: auto auto auto;
-        justify-content: space-around;
-        gap:2rem;
-        justify-items: center;
-
-        font-family: Outfit;
-        font-size: 1rem;
-        border: 1px solid #3A5B6A;
-        border-radius: 30px;
-    }
+        // }
+        .buy{
+            position: relative;
+            padding: 1.5rem 2rem;
+            background-color: transparent;
+            border: 1px solid #56CAB1;
+            border-radius: 20px;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: bold;
     
-    .itemsFlex{
-                list-style: none;
-                color: #fff;
-                display: flex;
+            &::after {
+                box-sizing: border-box;
+                content: '';
+                position: absolute;
+                padding: 1.5rem 2rem;
+                width: 100%;
+                height: 100%;
+                top: 0.25rem;
+                left: -0.25rem;
+                border: 1px solid #5bd2bd;
+                border-radius: 20px;
+                z-index: -1;
+            }
+        }
+        .items{
+            margin: 2rem 0;
+            background-color: #3A5B6A;
+            padding: 1rem 2.5rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: space-around;
+            gap:1rem 2rem;
+            justify-items: center;
+        
+            border: 1px solid #3A5B6A;
+            border-radius: 30px;
+        }
+        .itemsFlex{
+            list-style: none;
+            color: #fff;
+            display: flex;
 
-             }
+         }
+    }
+        .monkey{
+            width: 90%; 
+            padding-left: 2rem;  
+        }
+    
 }
+
 #carryOut{
     position: relative;
     padding: 2rem 2rem 0 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:1rem;
+    margin: 4rem 0;
+
     
-    .mission{
+    .tittle{
         margin:0;
         font-size: 2rem;
         text-align: center;
-        font-family: Outfit;
         font-weight: 1200;
         color: #fff; 
     }
@@ -254,109 +259,98 @@ header{
     border-radius: 50px;
     padding: 0.5rem 1rem 0.5rem 1rem;
     color: #5BD2BD;
-    font-family: Outfit;
     text-transform: uppercase;
-    font-weight: 800;
+    // top: 0;
+    // left: 0;
+    // transform: translate(-50%, -50%);
     }
-    .blueMonkey{
-        top: 0;
-        left: 0;
-        transform: rotate(-25deg);
+    .monkeys {
         position: relative;
-        width: 70%;
-    }
-    .purpleMonkey{
-        position:absolute;
-        width: 45%;
-        // z-index: 10;
-        bottom: 0px;
-        right: 2rem;
-    // float:right;
-    // z-index: 10;
 
+
+        .blueMonkey {
+            top: 0;
+            left: 2rem;
+            transform: rotate(-25deg);
+            position: relative;
+            width: 50%;
+        }
+
+        .purpleMonkey {
+            position: absolute;
+            width: 50%;
+            bottom: 0px;
+            right: -1rem;
+        }
     }
     .blur{
         position:absolute;
         bottom: 0;
         z-index: -10;
-        width: 100%;
+        width: 80%;
     }
 }
 #testmonial{
-    padding: 2rem 5rem 0 5rem;
+    padding: 2rem 5rem 0 2rem;
     .littleTittle{
         margin: 0;
         color: #4C99BB;
-        font-family: Outfit;
         font-size: 1.25rem;
         text-transform: uppercase;
         text-align: center;
     }
-    .ourClients{
+    .tittle{
         margin:0;
+        padding-bottom: 2rem;
         font-size: 2rem;
         text-align: center;
-        font-family: Outfit;
         font-weight: 1200;
         color: #fff; 
-    }
-    .clients{
-        margin:0;
-        font-size: 1.5rem;
-        text-align: center;
-        font-family: Outfit;
-        font-weight: 1200;
-        color: #fff; 
-
- 
-    }
-    .clientsOpinion{
-        margin:0;
-        font-size: 1rem;
-        text-align: center;
-        font-family: Outfit;
-        font-weight: 1200;
-        color: #fff; 
-
-    }
-    .clientsPhotos{
-        border-radius: 50%;
-        z-index: 1;
-        width: 30%;
-        margin-bottom: -6%;
-    }
-    .text{
-        padding: 2rem 1rem;
-        background-color: #24293F;
-        border-radius: 10px;
-        line-height: 1.5;
     }
     .opinions{
+        margin-bottom: 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         justify-items: center;
         gap:0.5rem;
-    }
-    .opinionsFlex{
-        margin-top: 2rem;
-        display: flex;
-        flex-direction: column;
-        gap:1rem;
 
-    }
+        .clientsPhotos{
+            border-radius: 50%;
+            z-index: 1;
+            width: 100px;
+            margin-bottom: -10%;
+        }
+        .text{
+            padding: 3rem 1rem;
+            background-color: #24293F;
+            border-radius: 10px;
+            line-height: 1.5;
 
+            .name{
+                margin:0;
+                font-size: 1.5rem;
+                text-align: center;
+                color: #fff; 
+        }
+            .description{
+                margin:0;
+                text-align: center;
+                color: #fff; 
+            }
+    }
+}
 }
 #becomePart{
-    padding: 2rem 2rem 0 2rem; 
+    padding-top: 2rem;
     position: relative;
     .gradient{
         background-image: linear-gradient(#252A46, #39766D);
         z-index: -10;
         height: 80vh;
     }
-    .project{
+    .tittle{
         margin:0;
         position: absolute;
         width: 60vw;
@@ -365,8 +359,6 @@ header{
         transform: translate(-50%, -50%);
         font-size: 2rem;
         text-align: center;
-        font-family: Outfit;
-        font-weight: 1200;
         color: #fff;
     }
     .btnProject{
@@ -381,19 +373,48 @@ header{
         border-radius: 50px;
         padding: 1rem 1.5rem 1rem 1.5rem;
         color: #fff;
-        font-family: Outfit;
         text-transform: uppercase;
-        font-weight: 800;
     }
 }
+footer{
+    padding: 2rem 2rem 0 2rem;
+    position: relative;
+        .littleTittle{
+            padding-bottom: 1rem;
+            margin: 0;
+            color:#fff;
+            text-align: center;
+            font-size: 1.25rem;
+        }
+    ul{
+        padding: 0;
+        li{
+            margin: 0;
+            list-style-type: none;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+    }
+    .email{
+        padding: 0.5rem 1.5rem;
+        color: #fff;
+        font-size: 1.25rem;
+        background-color: #3C8273;
+        border-radius: 50px;  
+    }
+    .submit{
+        all: unset;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 0.5rem 1.5rem;
+        background-color: #262E48;
+        border-radius: 50px;
+        color: #fff;
+        font-size: 1.25rem;
 
-@media all and (min-width:465px){
-    #carryOut{
-    .purpleMonkey{
-        width: 40%;
-        right: 4rem;
     }
-}
 }
 @media all and (max-width:768px){
     header{
@@ -412,7 +433,6 @@ header{
         gap:3rem;
 
         list-style: none;
-        font-family: outfit;
         color: #fff; 
         font-size: 1rem;
         cursor: pointer;   
@@ -428,126 +448,173 @@ header{
 }
 
     #heropage{
+        .heroFlex{
+            .tittle{
+                    padding-left: 3rem ;
+                    font-size: 3rem; 
+            }
 
-    .heropage{
-        padding-left: 3rem ;
-        font-size: 3rem; 
-    }
-
-    .btnSell {
-        font-size: 1rem;
-    }
-    .btnBuy {
-        font-size: 1rem;
-    }
+            .btnSell {
+                    font-size: 1rem;
+            }
+            .btnBuy {
+                    font-size: 1rem;
+            }
+        }
 }
     #featuredOn{
-        p{
+        h2{
             padding: 3rem 0 1rem 4rem;
             font-size: 1.5rem;
             font-weight: 700;
         }
-    .names{
-        padding-left: 4rem;
-        font-size: 1.5rem; 
-        gap:4rem;
-        justify-content: space-between;
-    }
-    .logo{
-        font-size: 2rem;
-    }
-    .nav{
-        display: none;
-}
-.backgrounding {
-    width: 90%;
-    height:35%;
+        .container{
+            .names{
+                padding-left: 4rem;
+                font-size: 1.5rem; 
+                gap:4rem;
+                justify-content: space-between;
+            }
+        }
 }	
-
-}
     #buyNFT{
-.firstPeople{
-    font-size: 3rem; 
-}
-.bonus{
-    font-size: 1.5rem;
-}
-.price{
-    font-size: 1.5rem;
+        .wrapper{
+            .tittle{
+                font-size: 3rem; 
+            }
+            .bonus{
+                font-size: 1.5rem;
+                .price{
+                    font-size: 1.5rem;
+
+                    // &::after {
+                    //     box-sizing: border-box;
+                    //     content: '';
+                    //     position: absolute;
+                    //     width: 50px;
+                    //     height: 3px;
+                    //     top: 3rem;
+                    //     left: 3rem;
+                    //     border: 3px solid #5bd2bd;
+                    //     z-index: 10;
+                    // }
+                }
+            }
+            .buy{
+                font-size: 1.5rem;
+                
+            }
+                .items{
+                    font-size: 1.5rem;
+
+                }
+            }
+            .monkey{
+                padding-left: 5rem;
+            }
 
 }
-.NFT{
-    color: #56CAB1;
-}
-.monkey{
-    width: 70%;
+    #carryOut{
+        .tittle{
+            font-size: 3rem;
+        }
+        .monkeys{
+            .blueMonkey {
+                width: 35%;
+                margin-left: 8rem;
+            }
     
-}
-
-.buy{
-    font-size: 1.5rem;
-    
-}
-    .items{
-        font-size: 1.5rem;
-
+            .purpleMonkey {
+                width: 35%;
+                margin-right: 6rem;
+            }
+        }
     }
-}
-#testmonial{
+    #testmonial{
     .littleTittle{
         font-size: 1.5rem;
     }
-    .ourClients{
+    .tittle{
         font-size: 3rem; 
     }
-    .clients{
+    .name{
         font-size: 2.5rem; 
     }
-    .clientsOpinion{
-        font-size: 1.25rem;
-    }
-    .clientsPhotos{
-        width: 15%;
-        margin-bottom: -4%;
-    }
+        .opinions{
+            
+            .clientsPhotos{
+                margin-bottom: -5%;
+            }
+        }
+        .text{
+            .description{
+                font-size: 1.25rem;
+            }
+        }
 }
-#becomePart{
-    .project{
+    #becomePart{
+    .tittle{
         font-size: 3rem;
     }
     .btnProject{
         padding: 1.5rem 2rem 1.5rem 2rem;
         color: #fff;
-        font-family: Outfit;
         font-size: 1.5rem;
         text-transform: uppercase;
         font-weight: 800;
+    }
+}
+footer{
+        .littleTittle{
+            font-size: 2rem;
+        }
+        li{
+            margin-bottom: 1.25rem;
+            font-size: 1.5rem;
+        }
+        .email{
+        padding: 1.5rem 2.5rem;
+        font-size: 2rem; 
+    }
+    .submit{
+        right: 2rem;
+        padding: 1.5rem 2.5rem;
+        font-size: 2rem;
+
     }
 }
 }
 @media all and (min-width:900px){
 
 #heropage{
-    .imgHero{
+    .heroFlex{
+        .imgHero{
         padding-left:4rem;
-    }
+        }
 
-    .btnSell {
-        padding: 1rem 1.5rem;
-        font-size: 1.25rem;
-    }
-    .btnBuy {
-        padding: 1rem 1.5rem;
-        font-size: 1.25rem;
+            .btnSell {
+                padding: 1rem 1.5rem;
+                font-size: 1.25rem;
+            }
+            .btnBuy {
+                padding: 1rem 1.5rem;
+                font-size: 1.25rem;
+            }
     }
 }
-#featuredOn{
-    .names{
-  padding: 2rem 2rem;
-    }
-    .backgrounding {
-        width: 90%;
-        height:53%;
+#carryOut{
+    .monkeys{
+        .blueMonkey {
+            width: 30%;
+            margin-left: 8rem;
+        }
+
+        .purpleMonkey {
+            width: 30%;
+            top: 50%;
+            left: 65%;
+            transform: translate(-50%, -50%);
+        }
     }
 }
 }
@@ -570,136 +637,154 @@ header{
         .greenblur{
             width: 50%;
         }
-        .blueblur{
-            width: 40%;
-        }
 
         .heroFlex{
             display: flex;
             flex-direction: row-reverse;
-            // align-items: center;
             justify-content: space-around;
-        }
-        .imgHero{
-        width: 40%;
+            .imgHero{
+            width: 40%;
 
-        }
-        .heropage{
-            text-align: left;
-            font-size: 3rem; 
-            width: 40vw;
-        }
-        .btnflex{
-            align-items: flex-start;
-            color: green;
-        }
-        .heropage{
-            padding: 0;
-        }
+            }
+            .tittle{
+                padding: 0;
+                text-align: left;
+                font-size: 3rem; 
+                width: 40vw;
+            }
+            .btnflex{
+                align-items: flex-start;
+                color: green;
+            }
 
-        // .btnHero{
-        //     justify-content: left;
-        // }
-        // .btnSell {
-        //     padding: 1.25rem 2rem;
-        //     font-size: 2rem;
-        // }
-        // .btnBuy {
-        //     padding: 1.25rem 2rem;
-        //     font-size: 2rem;
-        // }
-        .btnHero{
-            gap: 3rem;
-            justify-content: left;
-            margin-left: 10rem;
-            margin-top:3rem;
+            .btnHero{
+                display: flex;
+                gap: 2rem;
+                justify-content: left;
+                margin-top:3rem;
+            }
         }
-        // .btnBuy{
-        //     font-size:10rem;
-        //     padding: 1rem 3rem 1rem 3rem;
-        // }
-        // .btnSell{
-        //     font-size:1.5rem;
-        //     padding-left:3rem;
-        //     padding-right:3rem;
-        // }
-        p{
+        .blueblur{
+            width: 40%;
+    }
+    }
+    #featuredOn{
+        h2{
             font-size: 2rem;
         }
-        
-        .names{
-            font-size: 1.5rem;
-            gap:4rem;
-            justify-content: space-around;
+    }    
+    #buyNFT{
+        .flex{
+            display: flex;
+            flex-direction: row-reverse;
+            gap:2rem;
+            flex-wrap: nowrap;
+            .wrapper{
+                .tittle{
+                    text-align: left;
+                }
+                .highlight{
+                    text-align: left;
+                }
+                .bonus{
+                    text-align: left;
+                }
+                    .price{
+                        font-size: 2rem;
+                        // &::after {
+                        //     box-sizing: border-box;
+                        //     content: '';
+                        //     position: absolute;
+                        //     width: 50px;
+                        //     height: 3px;
+                        //     top: 12rem;
+                        //     left: 23rem;
+                        //     border: 3px solid #5bd2bd;
+                        //     z-index: 10;
+                        // }
+                }           
+                .buy{
+                    font-size: 1.5rem;
+                    }
+
+                    }
+                .monkey{
+                    padding: 0;
+    
+                }
+            }
         }
-        .logo{
-            font-size: 2rem;
+                
+}
+    #carryOut{
+    .tittle{
+        font-size: 3rem; 
+    }
+    .monkeys{
+        .blueMonkey {
+            width: 25%;
+            margin-left: 16rem;
+        }
+
+        .purpleMonkey {
+            width: 25%;
+            top: 50%;
+            left: 65%;
+            transform: translate(-50%, -50%);
         }
     }
-        
-    #buyNFT{
-            position: relative;
-
-        .wrapper{
-            padding-top: 3rem;
-            flex-direction: row-reverse;
-            align-items: flex-start;
-            gap:3rem;
+}
+    #testmonial{
+    .opinionsFlex{
+        display: flex;
+        flex-direction: row;
+        gap:2rem;
+    }
+    .opinions{
+        .clientsPhotos{
+            margin-bottom: -15%;
         }
-        .flexInfo{
+        .text{
+            padding: 5.5rem 4rem;
+        }
+    }
+
+}
+    #becomePart{
+        padding: 4rem 2rem;
+        .gradient{
+        height: 700px;
+        border-radius: 50px;
+
+        }
+    }
+footer{
+    .lists{
+        display: flex;
+        gap:2rem;
+        justify-content: space-around;
+        .logo{
+            align-self: center;
+        }
+        li{
+            margin-bottom: 1.25rem;
+            font-size: 1.5rem;
+        }
+        .form{
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
-            line-height: 1.5;
+            justify-content: center;
+            .email{
+                padding: 0.5rem 1.5rem;
+                font-size: 1.5rem; 
+            }
         }
-        .firstPeople{
-            text-align: left;
-            // order: 2;
-        }
-        .bonus{
-            text-align: left;
-        }
-        .price{
-            font-size: 2rem;
-        
-        }
-        .monkey{
-            width: 40%;
-            // order: 1;
-            
-        }
-        
-        .buy{
+    }
+        .submit{
+            bottom: 5.75rem;
+            padding: 0.5rem 1.5rem;
             font-size: 1.5rem;
-            // order: 3;
-            }
-            .items{
-                margin-right: 2rem;
-                width: 50vw;
-                position:absolute;
-                right:0;
-                bottom:0px;
-                justify-items: center;
-                font-size: 1.5rem;
-    
-            }
-            
-        .itemsFlex{
-            list-style: none;
-            color: #fff;
-            display: flex;
-            // background-color: red;
-        }
-}
-#testmonial{
-    .clientsPhotos{
-        width: 40%;
-        margin-bottom: -10%;
     }
-    .opinionsFlex{
-        flex-direction: row;
-    }
-}
 }
 @media all and (min-width:1600px){
     header{
@@ -714,89 +799,113 @@ header{
         }
     }
     #heropage{
-    .imgHero{
-    width: 45%;
-    padding: 0;
-    }
-    .heropage{
-        font-size: 4rem; 
-        // padding-left: 5rem;
-    }
+        .heroFlex{
+            .imgHero{
+                width: 45%;
+                padding: 0;
+            }
+                .tittle{
+                    font-size: 4rem; 
+                }
+        }
 }
     #featuredOn{
+    h2{
+        font-size: 2rem;
+}
+}
+    #buyNFT{
+        .flex{
+            justify-content: flex-start;
+            .wrapper{
 
-    p{
-        font-size: 2rem;
+                .tittle{
+                    font-size: 4rem;
+                }
+                .highlight{
+                    font-size: 3rem;
+                }
+                .bonus{
+                    font-size: 2rem;
+                }
+                .price{
+                    font-size: 2.5rem;
+                    text-align: left;
+                
+                }
+                .monkey{
+                    width: 45%;
+                    
+                }
+                
+                .buy{
+                    font-size: 2rem;
+                    align-self: left;
+                    }
+                    .items{
+                        margin: 0 2rem 0 0;
+                        width: 55vw;
+                    }
+                }
+            .monkey{
+                width: 40%;
+            }
+            }
     }
-    .backgrounding {
-        width: 95%;
-        height:53%;
-}
-}
-#buyNFT{
+    #carryOut{
+        .tittle{
+            font-size: 4rem;
+        }
+        .monkeys{
+                .tittle{
+            font-size: 4rem;
+        }
+            .blueMonkey {
+                width: 20%;
+                margin-left: 35rem;
+            }
 
-    .wrapper{
-        flex-direction: row-reverse;
-        gap:7rem;
-    }
-    .flexInfo{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        line-height: 1.5;
-        gap: 0rem;
-    }
-    .firstPeople{
-        font-size: 4rem;
-    }
-    .bonus{
-        font-size: 2rem;
-    }
-    .price{
-        font-size: 2.5rem;
-    
-    }
-    .monkey{
-        width: 45%;
-        
-    }
-    
-    .buy{
-        font-size: 2rem;
-        }
-        .items{
-            margin: 0 2rem 0 0;
-            width: 55vw;
+            .purpleMonkey {
+                width: 20%;
+                top: 50%;
+                left: 60%;
+                transform: translate(-50%, -50%);
+            }
         }
 }
-#testmonial{
+    #testmonial{
     .littleTittle{
         font-size: 2rem;
     }
-    .ourClients{
+    .tittle{
         font-size: 4rem;
-    }
-    .clientsPhotos{
-        width: 30%;
-        margin-bottom: -10%;
     }
     .opinionsFlex{
         flex-direction: row;
-        flex-wrap: nowrap;
-        
     }
+    .opinions{
+        .clientsPhotos{
+            width: 150px;
+            margin-bottom: -10%;
+        }
+    }
+
 }
     #becomePart{
-        .project{
+        .tittle{
             font-size: 4rem;
         }
         .btnProject{
             padding: 1.5rem 2.5rem 1.5rem 2.5rem;
             color: #fff;
-            font-family: Outfit;
             font-size: 2rem;
             text-transform: uppercase;
             font-weight: 800;
+        }
+    }
+    footer{
+        .submit{
+            bottom: 5.8rem;
         }
     }
 }
@@ -811,29 +920,36 @@ header{
         .btnflex{
             gap:2rem;
         }
-        .heropage{
+        .tittle{
             font-size: 5.5rem;
         }
     }
 #buyNFT{
-    .firstPeople{
-        font-size: 5rem;
-    }
-    .bonus{
-        font-size: 2.5rem;
-    }
-    .price{
-        font-size: 3rem;
-    }
-    .wrapper{
-        align-items: center;
-    }
+    .flex{
+        .wrapper{
+            gap:4rem;
+            .tittle{
+                font-size: 5rem;
+            }
+            .bonus{
+                font-size: 2.5rem;
+            }
+            .price{
+                font-size: 3rem;
+            }
+            .wrapper{
+                align-items: center;
+            }
+        }
     .monkey{
         width:40%;
     }
-    .flexInfo{
-        gap:2rem;
-        // margin-bottom: 7rem;
+}
+}
+footer{
+    .submit{
+        right: 9rem;
+        bottom:5.85rem;
     }
 }
 }
