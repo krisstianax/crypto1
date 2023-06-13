@@ -162,9 +162,21 @@ header .menu .nav {
   font-size: 1.25rem;
 }
 #buyNFT .wrapper .arrow {
-  position: absolute;
-  top: 3px;
   fill: #fff;
+}
+#buyNFT .wrapper .dollar {
+  position: relative;
+}
+#buyNFT .wrapper .dollar::after {
+  box-sizing: border-box;
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  top: 0.7rem;
+  left: 0.5rem;
+  border: 2px solid #5bd2bd;
+  z-index: 10;
 }
 #buyNFT .wrapper .buy {
   position: relative;
@@ -392,6 +404,9 @@ footer .submit {
     margin: 0;
     padding: 2rem 0 2rem 4rem;
   }
+  header .logo {
+    margin-right: auto;
+  }
   header ul {
     margin: 0;
     display: flex;
@@ -492,10 +507,12 @@ footer .submit {
   }
   footer .email {
     padding: 1.5rem 2.5rem;
+    margin-left: 5rem;
     font-size: 2rem;
+    max-width: 500px;
   }
   footer .submit {
-    right: 2rem;
+    right: 10rem;
     padding: 1.5rem 2.5rem;
     font-size: 2rem;
   }
@@ -521,6 +538,17 @@ footer .submit {
     top: 50%;
     left: 65%;
     transform: translate(-50%, -50%);
+  }
+  footer .email {
+    padding: 1.5rem 2.5rem;
+    margin-left: 5rem;
+    font-size: 2rem;
+    max-width: 700px;
+  }
+  footer .submit {
+    right: 10rem;
+    padding: 1.5rem 2.5rem;
+    font-size: 2rem;
   }
 }
 @media all and (min-width: 1100px) {
@@ -581,6 +609,10 @@ footer .submit {
   #buyNFT .flex .wrapper .price {
     font-size: 2rem;
   }
+  #buyNFT .flex .wrapper .arrow {
+    width: 40px;
+    height: 40px;
+  }
   #buyNFT .flex .wrapper .buy {
     font-size: 1.5rem;
   }
@@ -635,15 +667,16 @@ footer .submit {
   footer .form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
   }
   footer .form .email {
+    margin-left: unset;
     padding: 0.5rem 1.5rem;
     font-size: 1.5rem;
   }
   footer .submit {
-    bottom: 4.1rem;
-    padding: 0.5rem 1.5rem;
+    right: 2rem;
+    bottom: 6.6rem;
+    padding: 0.6rem 1.6rem;
     font-size: 1.5rem;
   }
 }
@@ -757,11 +790,11 @@ footer .submit {
   #buyNFT .flex .wrapper .price {
     font-size: 3rem;
   }
-  #buyNFT .flex .wrapper .items {
-    margin-top: 20rem;
-  }
   #buyNFT .flex .monkey {
     margin-left: 2rem;
-    width: 40%;
+    width: 45%;
+  }
+  footer .submit {
+    right: 3rem;
   }
 }/*# sourceMappingURL=style.css.map */
