@@ -1,0 +1,22 @@
+
+@keyframes flipInX {
+    0% {
+       transform: perspective(2000px) rotateX(90deg);
+       opacity: 0;
+    }
+
+    70% {
+       transform: perspective(2000px) rotateX(10deg);
+    }
+    100% {
+       transform: perspective(2000px) rotateX(0deg);
+       opacity: 1;
+    }
+ }
+
+ @keyframes fadeOut {
+    0% {opacity: 1;}
+    80% {opacity: 0;} 
+ }
+
+ 
